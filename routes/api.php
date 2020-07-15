@@ -15,8 +15,8 @@ use Illuminate\Http\Request;
 
 Route::resource('people', 'PeopleController');
 
-Route::get('groups','GroupdController@index');
+Route::get('groups','GroupController@index');
 Route::get('group/{id}', 'GroupController@show');
 Route::post('groups', 'GroupController@store');
 Route::put('groups', 'GroupController@update');
-Route::delete('groups/{id}', 'GroupController@delete');
+Route::delete('group/{id}', 'GroupController@delete');
