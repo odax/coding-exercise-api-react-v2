@@ -29,7 +29,7 @@ class UploadCsv extends Component {
     
         // Request made to the backend api 
         // Send formData object 
-        axios.post("api/uploadfile", formData); 
+        axios.post("api/people", formData); 
     }; 
    
   // File content to be displayed after 
