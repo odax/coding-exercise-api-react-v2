@@ -15,6 +15,9 @@ use Illuminate\Http\Request;
 
 Route::resource('people', 'PeopleController');
 
+Route::get('upload', 'CsvController@showForm');
+Route::post('upload', 'CsvController@store');
+
 Route::get('groups','GroupController@index');
 Route::get('group/{id}', 'GroupController@show');
 Route::post('groups', 'GroupController@store');
