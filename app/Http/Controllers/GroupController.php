@@ -18,7 +18,7 @@ class GroupController extends Controller
     }
     public function update(Request $request, $id) {
         $group = Group::findOrFail($id);
-        $group = update($request->all());
+        $group -> update($request->all());
         return $group;
     }
     public function delete(Request $request, $id) {

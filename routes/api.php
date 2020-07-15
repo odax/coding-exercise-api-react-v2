@@ -18,5 +18,5 @@ Route::resource('people', 'PeopleController');
 Route::get('groups','GroupController@index');
 Route::get('group/{id}', 'GroupController@show');
 Route::post('groups', 'GroupController@store');
-Route::put('groups', 'GroupController@update');
+Route::put('group/{id}', 'GroupController@update');
 Route::delete('group/{id}', 'GroupController@delete');
